@@ -1,10 +1,6 @@
 def sort_acronyms(acronyms):
     acronyms.sort(key=lambda acronyms: (-len(acronyms), acronyms))
 
-
-def begins_with_capital(word, index):
-    return (word[index].isupper() and word[index - 1] == " " and index - 1 > 0) or (word[index].isupper() and index == 0)
-
 def main():
     numberOfInputs = int(input(""))
     acronyms = []
@@ -23,7 +19,8 @@ def main():
 
     sort_acronyms(acronyms)
 
-    print(acronyms)
+    for acronym in acronyms:
+        print(acronym)
 
 if __name__ == "__main__":
     main()
