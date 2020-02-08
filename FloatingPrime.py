@@ -11,7 +11,7 @@ def is_prime(input_number):
         return False
 
 
-if __name__ == "__main__":
+def main():
     input_number = float(input())
 
     if input_number < 1 or input_number > 10:
@@ -41,5 +41,8 @@ if __name__ == "__main__":
 
         current_decimal_index += 1
 
-
     print(is_floating_prime)
+
+
+if __name__ == "__main__":
+    main()
